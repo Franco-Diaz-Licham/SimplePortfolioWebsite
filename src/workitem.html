@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Work Item</title>
+      <meta name="description" content="An individual sample of Ally's portfolio work."/>
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="css/site.css">
+   </head>
+   <body>
+      <header>
+         <nav>
+            <ul>
+               <li><a href="home.html">Home</a></li>
+               <li><a href="portfolio.html">Portfolio</a></li>
+               <li class="work-item-nav"><a href="workitem.html?item=1">Item #1</a></li>
+               <li class="work-item-nav"><a href="workitem.html?item=2">Item #2</a></li>
+               <li class="work-item-nav"><a href="workitem.html?item=3">Item #3</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <h2 id="work-item-header">01. Kids sports website</h2>
+         <img id="work-item-image" src="images/KidsSportsWebsiteFull.jpg" alt="" />
+         <div id="project-text" class="work-item-text">
+            <h3>The project</h3>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias esse iure 
+               facere dolorem sint nesciunt maxime necessitatibus dignissimos placeat, 
+               quibusdam possimus hic omnis, temporibus itaque ea fuga soluta sequi 
+               consectetur?
+            </p>
+         </div>
+         <div id="technologies-text" class="work-item-text">
+            <h3>The Technologies</h3>
+            <ul>
+               <li>HTML</li>
+               <li>CSS</li>
+               <li>JavaScript</li>
+               <li>C#</li>
+            </ul>
+         </div>
+         <div id="challenges-text" class="work-item-text">
+            <h3>The Challenges</h3>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias esse iure 
+               facere dolorem sint nesciunt maxime necessitatibus dignissimos placeat, 
+               quibusdam possimus hic omnis, temporibus itaque ea fuga soluta sequi 
+               consectetur?
+            </p>
+         </div>
+      </main>
+      <footer>
+         &copy; <span id="copyrightYear"></span> by Franco Diaz
+      </footer>
+      <script src="scripts/app.js"></script>
+      <script>app.workItem()</script>
+   </body>
+</html>

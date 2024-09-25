@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Home</title>
+      <meta name="description" content="Portfolio for Ally, including samples and contact information."/>
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="css/site.css">
+   </head>
+   <body>
+      <header>
+         <nav>
+            <ul>
+               <li><a href="home.html">Home</a></li>
+               <li><a href="portfolio.html">Portfolio</a></li>
+               <li class="work-item-nav"><a href="workitem.html?item=1">Item #1</a></li>
+               <li class="work-item-nav"><a href="workitem.html?item=2">Item #2</a></li>
+               <li class="work-item-nav"><a href="workitem.html?item=3">Item #3</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <div class="hero">
+            <h1>Hi, <br/> I'm Ally</h1>
+            <img src="images/Ally2.png" alt="A picture of me smilling."/>
+         </div>
+         <div id="contact-me">
+            <h2>This is how to contact me</h2>
+            <form id="contact-form" action="" method="post">
+               <label for="name">Name: </label>
+               <input id="name" type="text" name="name" required />
+               <label for="email">Email: </label>
+               <input id="email" type="text" name="email" required />
+               <label for="message">Message: </label>
+               <textarea id="message" name="message" rows="5" required></textarea>
+               <div>
+                  <button type="submit">Submit</button>
+                  <button type="reset">Reset</button>
+               </div>
+            </form>
+         </div>
+         <div id="portfolio-section">
+            <div class="portfolio-descp">
+               <h2> This is some of my work</h2>
+               <a href="portfolio.html">see more</a>
+            </div>
+            <img src="images/LandingPageCollage.png" alt="My portfolio collage, including images of my campaign site, restaurant site, and skids sports site."/>
+         </div>
+         <div id="my-story">
+            <h2>This is my story</h2>
+            <p>
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam rem 
+               ea assumenda perspiciatis numquam laudantium tempora et unde officiis? 
+               Pariatur at aspernatur veritatis expedita nostrum.
+            </p>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto aut libero 
+               impedit aliquam! Odio esse necessitatibus animi vel, repellat sunt!
+            </p>
+         </div>
+      </main>
+      <footer >
+         &copy; <span id="copyrightYear"></span> by Franco Diaz
+      </footer>
+      <script src="scripts/app.js"></script>
+      <script>app.homePage()</script>
+   </body>
+</html>

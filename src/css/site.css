@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+html{
+    font-family:'Quicksand',sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+}
+
+body{
+    max-width: 1440px;
+    margin: auto;
+    background-color: rgba(0,0,0,0.034);
+}
+
+main{
+    background-color: #FFFFFF;
+    margin: 0.05rem 0;
+}
+
+footer{
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 0.67rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+header{
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 0.67rem;
+    text-align: right;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+h1{
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+h2{
+    font-weight: 700;
+    color: #000000;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+p{
+    line-height: 1.5rem;
+}
+
+form{
+    padding: 0 15%;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+nav ul {
+    font-size: 1rem;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 0.25rem;
+    display: inline-block;
+}
+
+nav ul li a{
+    color: #D8D33C;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #000000;
+}
+
+input, textarea{
+    font-size: 1rem;
+}
+
+form > div{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    font-size: 0.75rem;
+    padding: 0.35rem 5%;
+    margin: 0.25rem;
+}
+
+.hero{
+    position: relative;
+}
+
+.hero img{
+    width: 100%;
+}
+
+.hero h1{
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+}
+
+#contact-me h2{
+    margin: 0;
+    text-align: center;
+}
+
+#portfolio-section{
+    position: relative;
+    margin: 1rem;
+}
+
+#portfolio-section img{
+    width: 100%;
+}
+
+#portfolio-section > div{
+    position: absolute;
+    top: 0rem;
+    left: 1rem;
+}
+
+#portfolio-section .portfolio-descp h2{
+    margin: 0.5rem 0 0;
+}
+
+#portfolio-section a{
+    color: #D8D33C;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#portfolio-section a:hover{
+    color: #000000;
+}
+
+#my-story{
+    padding: 0 15%;
+}
+
+#my-story h2{
+    margin: 0;
+}
+
+.highlight{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #000000;
+}
+
+.highlight.inverted{
+    flex-direction: row-reverse;
+}
+
+.highlight > div{
+    flex-grow: 1;
+}
+
+.highlight > img{
+    max-width: 50%;
+}
+
+.highlight h2{
+    color: #FFFFFF;
+}
+
+.highlight a{
+    color: #D8D33C;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.highlight a:hover{
+    cursor: pointer;
+    color: #000000;
+}
+
+#work-item-header{
+    margin: 0;
+    text-align: center;
+}
+
+#work-item-image{
+    width: 100%;
+}
+
+.work-item-text{
+    padding: 0 15%;
+}
+
+.work-item-text h3{
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 600px){
+    html{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 767px){
+    html{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    html{
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    html{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+
+}
+
+@media print {
+    *,
+    *::before,
+    *::after {
+        background: #ffffff !important;
+        color: #000000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    @page{
+        margin: 1in;
+        size: letter portrait;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    a[href]::after{
+        content: " (" attr(href) ")";
+    }
+
+    body > *:not(main){
+        display: none;
+    }
+
+    h2 {
+        page-break-before: always;
+    }
+
+    ol{
+        page-break-inside: avoid;
+    }
+
+    p{
+        orphans: 3;  /*how many lines in the previous page */
+        widows: 3;   /*how many lines in the next page */
+    }
+
+    header, footer{
+        display: none;
+    }
+
+    html{
+        font-size: 14px;
+    }
+ }
